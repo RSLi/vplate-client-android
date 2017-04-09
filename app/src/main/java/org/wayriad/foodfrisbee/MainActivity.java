@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity
                 Commander.send(Command.BACK, MainActivity.this);
             }
         });
+
+        Commander.send(Command.FORWARD, this);
+        Toast.makeText(this, "Success", Toast.LENGTH_LONG).show();
+
     }
 
 //    public void showToastWarning() {
